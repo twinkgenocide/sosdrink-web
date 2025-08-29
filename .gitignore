@@ -1,0 +1,13 @@
+# Basura del SO
+.DS_Store
+Thumbs.db
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
+
+# Archivos temporales
+*.tmp
+*.swp
