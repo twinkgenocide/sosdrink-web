@@ -1,13 +1,15 @@
 #cont-minproductos {
-    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    max-width: min(100%, 1000px);
+    margin: 0 auto;
+    padding: 0 50px;
 }
 
 .minproducto {
     width: 250px;
-    margin: 10px auto;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .minproducto img {
