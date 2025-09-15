@@ -3,3 +3,9 @@ body {
     color: #e0e0f0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
