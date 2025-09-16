@@ -138,6 +138,32 @@ form{
     font-size: 0.95rem;
 }
 
+.blog-container{
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 16px;
+
+
+}
+
+.blog-post {
+            background: #18192b;
+            border: 2px solid #5efc82;
+            border-radius: 14px;
+            box-shadow: 0 4px 16px rgba(94,252,130,0.12);
+            margin-bottom: 32px;
+            padding: 28px 24px;
+        }
+
+.about-container{
+    border-radius: 14px;
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 16px;
+    border: 2px solid #5efc82
+    
+}
+
 
 
 
