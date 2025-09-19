@@ -116,6 +116,52 @@ footer .footer-socials > div {
 
 }
 
+/* botones */
+
+.btn-cart {
+    margin: auto;
+    margin-right: 0;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+
+    border: none;
+    border-radius: 50%;
+
+    background-color: #fff2;
+    color: white;
+    font-size: x-large;
+    transition: color 100ms, background-color 100ms;
+
+    &::after {
+    }
+
+    &.add {
+        &:hover {
+            color: greenyellow;
+            background-color: color-mix(in srgb, greenyellow, transparent 80%);
+        }
+        &::after {
+            content: "+";
+            position: relative;
+            top: -0.34em;
+            left: -0.03em;
+        }
+    }
+
+    &.remove {
+        &:hover {
+            color: crimson;
+            background-color: color-mix(in srgb, crimson, transparent 70%);
+        }
+        &::after {
+            content: "_";
+            position: relative;
+            top: -0.82em;
+        }
+    }
+}
+
 a{
     color:aliceblue
 }
