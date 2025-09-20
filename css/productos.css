@@ -12,7 +12,7 @@
     padding: 20px;
 }
 
-.minproducto img {
+.minproducto-img {
     display: block;
     margin: 0 auto;
 
@@ -23,12 +23,21 @@
     border-radius: 5px;
 }
 
-.minproducto h2 {
-    font-size: large;
+.minproducto-nombre {
+    font-size: medium;
+    text-align: center;
     margin: 12px 0;
 }
 
-.minproducto h3 {
-    font-size: medium;
-    margin: 0;
+.minproducto .minproducto-foot {
+    display: inline-flex;
+    width: 100%;
+
+
+    & .minproducto-precio {
+        font-size: medium;
+        margin: auto 0;
+    }
+
 }
+
