@@ -1,12 +1,22 @@
-body {
+html, body {
     margin: 0;
+    height: 100%;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
     background-color: #161616;
     color: #e0e0f0;
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
 #content {
+    flex: 1;
+    width: 100%;
     background-color: #101010;
+
+    box-sizing: border-box;
     padding: 20px;
     margin: 0 auto;
 }
@@ -136,7 +146,7 @@ footer .footer-socials > div {
     &::after {
     }
 
-    &.add {
+    &.plus {
         &:hover {
             color: greenyellow;
             background-color: color-mix(in srgb, greenyellow, transparent 80%);
@@ -148,11 +158,10 @@ footer .footer-socials > div {
             left: -0.03em;
         }
     }
-
-    &.remove {
+    &.minus {
         &:hover {
-            color: crimson;
-            background-color: color-mix(in srgb, crimson, transparent 70%);
+            color: blueviolet;
+            background-color: color-mix(in srgb, blueviolet, transparent 70%);
         }
         &::after {
             content: "_";
@@ -160,6 +169,92 @@ footer .footer-socials > div {
             top: -0.82em;
         }
     }
+    &.remove {
+        &:hover {
+            color: crimson;
+            background-color: color-mix(in srgb, crimson, transparent 70%);
+        }
+        &::after {
+            content: "×";
+            position: relative;
+            top: -0.32em;
+            left: -0.03em;
+        }
+    }
+}
+
+.btn-option {
+    padding: 6px;
+    margin: 0;
+
+    background-color: color-mix(in srgb, blueviolet, transparent 85%);
+    color: blueviolet;
+
+    border: 2px solid blueviolet;
+    border-radius: 4px;
+
+    font-size: small;
+    letter-spacing: 2px;
+
+    transition: background-color, color, border-color, box-shadow;
+    transition-duration: 100ms;
+
+    &:hover {
+        background-color: color-mix(in srgb, greenyellow, transparent 60%);
+        color: greenyellow;
+        border-color: greenyellow;
+        box-shadow: 0 0 10px color-mix(in srgb, greenyellow, transparent 60%);
+    }
+}
+
+.btn-option.final {
+    font-size: medium;
+    letter-spacing: 4px;
+    padding: 8px;
+}
+
+/* input */
+
+input[type=number] {
+    -moz-appearance: textfield;
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+    }
+
+    border: none;
+    outline: none;
+
+    text-align: center;
+    padding: 3px 9px;
+    border-radius: 3px;
+
+    background-color: #161616;
+    color: white;
+
+    font-size: medium;
+    font-weight: 500;
+}
+
+input[type=text] {
+    border: 2px solid #444;
+    outline: none;
+
+    padding: 3px 9px;
+    border-radius: 3px;
+
+    background-color: #161616;
+    color: white;
+    font-size: medium;
+    font-weight: 500;
+}
+
+/* other */
+
+.vertical-line {
+    border-left: 2px solid #fff8;
+    margin: 0 20px;
 }
 
 a{

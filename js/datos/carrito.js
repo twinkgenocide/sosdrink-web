@@ -13,7 +13,7 @@ export function addToCarrito(product) {
 }
 
 export function removeFromCarrito(productId) {
-    const existing = carrito.find(item => item.id == product.id)
+    const existing = carrito.find(item => item.id == productId)
     if (existing) {
         existing.quantity -= 1;
         if (existing.quantity <= 0) {
@@ -24,7 +24,7 @@ export function removeFromCarrito(productId) {
 }
 
 export function setCantidad(productId, cantidad) {
-    const existing = carrito.find(item => item.id == product.id)
+    const existing = carrito.find(item => item.id == productId)
     if (existing) {
         existing.quantity = cantidad;
         if (existing.quantity <= 0) {

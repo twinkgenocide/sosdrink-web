@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PRODUCTOS</title>
+    <link href="css/cart.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+  </head>
+  <body>
+
+    <nav id="navbar"></nav>
+
+    <div id="content">
+      <div id="cont-productos"></div>
+      <div class="vertical-line"></div>
+      <div id="cont-pago">
+        <hr>
+        <div class="cart-pago-total"><p>TOTAL:</p><p class="cart-pago-costo">######</p></div>
+        <div class="cart-pago-checkout">
+          <div class="cart-pago-coupon">
+            <p>Ingrese el cupón de descuento</p>
+            <div>
+              <input type="text"></input>
+              <button class="btn-option">APLICAR</button>
+            </div>
+          </div>
+          <button class="btn-option final">PAGAR</button>
+        </div>
+      </div>
+    </div>
+
+    <template id="temp-cart-producto">
+      <div class="cart-producto">
+        <img class="cart-producto-img" src="img/productos/default.jpg">
+        <div class="cart-producto-detalles">
+          <h2 class="cart-producto-nombre">PLANTILLA_PRODUCTO</h2>
+          <p class="cart-producto-detalle">__________________</p>
+        </div>
+        <div class="cart-producto-split">
+          <div class="cart-producto-meta">
+            <h2 class="cart-producto-precio">########</h2>
+          </div>
+          <div class="cart-producto-picker">
+            <button class="btn-cart minus"></button>
+            <input type="number" min="1" max="10" value="5">
+            <button class="btn-cart plus"></button>
+          </div>
+        </div>
+        <button class="btn-cart remove"></button>
+      </div>
+    </template>
+
+    <footer id="footer"></footer>
+
+    <script type="module" src="./js/ui/carrito_ui.js"></script>
+    <script type="module" src="./js/ui/page-elements.js"></script>
+
+  </body>
+</html>

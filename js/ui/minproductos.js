@@ -18,7 +18,7 @@ function mostrarProductos() {
 
         const inCarrito = isInCarrito(prod.id);
 
-        const btnAdd = item.querySelector(".btn-cart.add");
+        const btnAdd = item.querySelector(".btn-cart.plus");
         const btnRemove = item.querySelector(".btn-cart.remove");
 
         if (inCarrito) {
